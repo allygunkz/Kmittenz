@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kmittenz - Beta</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #222;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+        #chat-container {
+            width: 800px;
+            background: #000000aa;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        #chat-box {
+            height: 100px;
+            overflow-y: auto;
+            color: #fff;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        #chat-input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            background: #333;
+            border: 1px solid #555;
+            color: #fff;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="chat-input" placeholder="Type here... (or type /controls to swap movement modes)" maxlength="100">
+
+    <script src="game.js"></script>
+
+</body>
+</html>
